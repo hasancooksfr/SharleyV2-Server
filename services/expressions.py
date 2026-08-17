@@ -29,7 +29,7 @@ IMPORTANT: the expression should be ONE from the above and only return Expressio
 """
 
 model = genai.GenerativeModel(
-    model_name='gemini-2.5-flash-lite',
+    model_name='gemini-3.5-flash-lite',
     generation_config=generation_config,
     system_instruction=INSTRUCTIONS
 )

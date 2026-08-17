@@ -83,7 +83,7 @@ EXAMPLES:
 """
 
 model = genai.GenerativeModel(
-    model_name='gemini-2.5-flash-lite',
+    model_name='gemini-3.5-flash-lite',
     generation_config=generation_config,
     safety_settings=safety_settings,
     system_instruction=knowledge_base
@@ -159,14 +159,14 @@ def health_check():
 
         return {
             "success": True,
-            "model": 'gemini-2.5-flash-lite',
+            "model": 'gemini-3.5-flash-lite',
             "response": response.text,
             "activeSessions": len(chat_sessions)
         }
     except Exception as e:
         return {
             "success": False,
-            "model": 'gemini-2.5-flash-lite',
+            "model": 'gemini-3.5-flash-lite',
             "detail": "Unexpected error occured",
             "error": str(e)
         }
