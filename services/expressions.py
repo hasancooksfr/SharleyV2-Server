@@ -26,6 +26,7 @@ Confused,
 Happy
 
 IMPORTANT: the expression should be ONE from the above and only return Expression, NO other words.
+Show only expression related to that conversation. Do not repeat expressions.
 """
 
 model = genai.GenerativeModel(
